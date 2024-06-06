@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Hovhannisyan - Full Stack Data Scientist</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        nav a {
+            color: #e0e0e0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff5722;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+        section p {
+            line-height: 1.6;
+            font-size: 18px;
+            text-align: justify;
+        }
+        .portfolio, .blog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .portfolio img, .blog img {
+            width: 30%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .portfolio img:hover, .blog img:hover {
+            transform: scale(1.05);
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+        }
+        .contact-info a {
+            color: #ff5722;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Karen Hovhannisyan</h1>
+        <p>Full Stack Data Scientist</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>An experienced Data Professional with a solid statistical, technical, and managerial background. Currently leading a team of Data Scientists to design, implement, and integrate state-of-the-art Machine Learning algorithms for solving telecom-related business problems, such as Churn Management, A/B testing, Recommendation Engines, and Social Network Analysis. Parallel to this, I provide consulting services in customer and predictive analytics, data-driven decision making, and digital transformation.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio">
+                <!-- Add your portfolio images here -->
+                <img src="portfolio1.jpg" alt="Portfolio Image 1">
+                <img src="portfolio2.jpg" alt="Portfolio Image 2">
+                <img src="portfolio3.jpg" alt="Portfolio Image 3">
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2 class="section-title">Blog</h2>
+            <div class="blog">
+                <!-- Add your blog images here -->
+                <img src="blog1.jpg" alt="Blog Image 1">
+                <img src="blog2.jpg" alt="Blog Image 2">
+                <img src="blog3.jpg" alt="Blog Image 3">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <p>Feel free to reach out to me via LinkedIn or GitHub:</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/karenhovhannisyan" target="_blank">LinkedIn</a> | 
+                    <a href="https://github.com/karenhovhannisyan" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Karen Hovhannisyan</p>
+    </footer>
+</body>
+</html>
