@@ -3,135 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tosin Ibiyeye - Full Stack Data Scientist</title>
-        <style>
-        body {
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #1f1f1f;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1, footer p {
-            margin: 0;
-        }
-        nav a {
-            color: #e0e0e0;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #ff5722;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section-title {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 24px;
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
-        }
-        section p {
-            line-height: 1.6;
-            font-size: 18px;
-            text-align: justify;
-        }
-        .portfolio, .blog {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-        .portfolio img, .blog img {
-            width: 30%;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .portfolio img:hover, .blog img:hover {
-            transform: scale(1.05);
-        }
-        .contact-info {
-            text-align: center;
-            font-size: 18px;
-        }
-        .contact-info a {
-            color: #ff5722;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tosin Ibiyeye - Data Analyst</title>
 </head>
-<body>
-    <header>
+<body class="bg-dark text-light">
+    <header class="bg-dark text-center py-4">
         <h1>Tosin Ibiyeye</h1>
         <p>Data Analyst</p>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="text-light mx-2">About Me</a>
+            <a href="#portfolio" class="text-light mx-2">Portfolio</a>
+            <a href="#blog" class="text-light mx-2">Blog</a>
+            <a href="#contact" class="text-light mx-2">Contact</a>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container my-5">
         <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <p>Hello, I am Tosin, I am a data analyst with over 12+ years of experience in technology consulting and international audit services, I’m proficient in identifying connections between data sets and turning challenges into opportunities, with my experience I’ve transitioned into information security conscious data analysis that will collaborate with relevant stakeholder to turn data to insight for great business decision making.</p>
+            <h2 class="section-title text-center border-bottom pb-3">About Me</h2>
+            <p class="text-justify">Hello, I am Tosin, I am a data analyst with over 12+ years of experience in technology consulting and international audit services, I’m proficient in identifying connections between data sets and turning challenges into opportunities, with my experience I’ve transitioned into information security conscious data analysis that will collaborate with relevant stakeholder to turn data to insight for great business decision making.</p>
         </section>
 
-        <section id="portfolio">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="portfolio">
+        <section id="portfolio" class="my-5">
+            <h2 class="section-title text-center border-bottom pb-3">Portfolio</h2>
+            <div class="row">
                 <!-- Add your portfolio images here -->
-                <a href="https://github.com/Tosinibiyeye/Rockbuster_Stealth/blob/main/Final_Report_%20to_Client/Presenting%20SQL%20Results_Ibiyeye%20Tosin_CF_Exercise_3.10.pdf" target="_blank">
-                    <img src="img/1.jpg" alt="Portfolio Image 1">
-                  </a>
-                  <a href="https://github.com/Tosinibiyeye/GameCo-/blob/main/final_presentation_slide/CF_Project_Portfolio_Exercise%205.8_Ibiyeye_Tosin%20(4).pdf" target="_blank">
-                    <img src="img/Final Project Presentation.jpg" alt="Portfolio Image 1">
-                  </a>
-                  <a href="https://github.com/Tosinibiyeye/Influenza_Season/blob/main/Final_Report_%20to_Client/CF_Project_Portfolio_Exercise%205.8_Ibiyeye_Tosin%20(3).pdf"target="_blank">
-                    <img src="img/Influenza Season .png" alt="Portfolio Image 1">
-                  </a>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/Tosinibiyeye/Rockbuster_Stealth/blob/main/Final_Report_%20to_Client/Presenting%20SQL%20Results_Ibiyeye%20Tosin_CF_Exercise_3.10.pdf" target="_blank">
+                        <img src="img/1.jpg" class="img-fluid rounded zoomable" alt="Portfolio Image 1">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/Tosinibiyeye/GameCo-/blob/main/final_presentation_slide/CF_Project_Portfolio_Exercise%205.8_Ibiyeye_Tosin%20(4).pdf" target="_blank">
+                        <img src="img/Final Project Presentation.jpg" class="img-fluid rounded zoomable" alt="Portfolio Image 2">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/Tosinibiyeye/Influenza_Season/blob/main/Final_Report_%20to_Client/CF_Project_Portfolio_Exercise%205.8_Ibiyeye_Tosin%20(3).pdf" target="_blank">
+                        <img src="img/Influenza Season .png" class="img-fluid rounded zoomable" alt="Portfolio Image 3">
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section id="blog">
-            <h2 class="section-title">Blog</h2>
-            <div class="blog">
+        <section id="blog" class="my-5">
+            <h2 class="section-title text-center border-bottom pb-3">Blog</h2>
+            <div class="row">
                 <!-- Add your blog images here -->
-                <p><video src="CF  Exercise 2.10 recording 2.mp4" controls type ="video/mp4" width ="480"></video></video></p>
-                <img src="blog2.jpg" alt="Blog Image 2">
-                <img src="blog3.jpg" alt="Blog Image 3">
+                <div class="col-md-4 mb-4">
+                    <video src="CF  Exercise 2.10 recording 2.mp4" controls type="video/mp4" class="img-fluid rounded"></video>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="blog2.jpg" class="img-fluid rounded zoomable" alt="Blog Image 2">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="blog3.jpg" class="img-fluid rounded zoomable" alt="Blog Image 3">
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-info">
+        <section id="contact" class="my-5">
+            <h2 class="section-title text-center border-bottom pb-3">Contact</h2>
+            <div class="text-center">
                 <p>Feel free to reach out to me via LinkedIn or GitHub:</p>
                 <p>
-                    <a href="https://www.linkedin.com/in/tosinibiyeye" target="_blank">LinkedIn</a> | 
-                    <a href="https://public.tableau.com/app/profile/tosin.ibiyeye/vizzes" target="_blank">tableau</a> | 
-                    <a href="https://github.com/Tosinibiyeye" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/tosinibiyeye" target="_blank" class="btn btn-outline-light mx-2">LinkedIn</a>
+                    <a href="https://public.tableau.com/app/profile/tosin.ibiyeye/vizzes" target="_blank" class="btn btn-outline-light mx-2">Tableau</a>
+                    <a href="https://github.com/Tosinibiyeye" target="_blank" class="btn btn-outline-light mx-2">GitHub</a>
                 </p>
             </div>
         </section>
     </div>
 
-    <footer>
+    <footer class="bg-dark text-center py-3">
         <p>&copy; 2024 Tosin Ibiyeye</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
