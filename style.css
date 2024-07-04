@@ -1,0 +1,39 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    font-size: 24px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+section p {
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: justify;
+}
+
+nav a {
+    color: #e0e0e0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff5722;
+}
+
+/* Custom hover and zoom-out effect */
+.zoomable {
+    transition: transform 0.3s;
+}
+
+.zoomable:hover {
+    transform: scale(1.05);
+}
